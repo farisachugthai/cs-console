@@ -1,0 +1,25 @@
+{
+    "tasks": [
+        {
+            "label": "Build dotnet project",
+            "type": "process",
+            "command": "dotnet",
+            "args": [
+                "run",
+                "--project",
+                "dotnet_console",
+                "--no-launch-profile",
+                "--",
+                "TestFx"
+            ],
+            "options": {
+                "cwd": "${workspaceRoot}"
+            },
+            "group": "build",
+            "presentation": {
+                "focus": true
+            },
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
